@@ -1,5 +1,40 @@
 eDeliver Versions
 =================
+__1.4.6__
+
+_Good news everyone! Distillery compatability is restored!_
+
+- Enhancements
+  - Require at least distillery 1.0.0
+  - Remove compile warnings
+  - Tests run now on all OSs
+- Bug fixes
+  - Fix issue with ControlPersist (#105)
+  - Fix profile output dir (#254)
+  - Fix posix compatibility (#147)
+- Backwards incompatible changes
+  - Exrm support removed . As discussed here: https://elixirforum.com/t/edeliver-plans-to-remove-exrm-support-any-objections/12416
+
+__1.4.5__
+
+- Merge pull request #248 from dmarkow/distillery-fixes
+- Update docs for distillery integration
+- Use correct output_dir from distillery
+- Ensure docs are built for both exrm/distillery plugins
+- Merge pull request #199 from otaq/master
+- Sleep 1 before check node running
+
+__1.4.4__
+
+- Removed support for spaces in project path. It broke using multiple hosts.
+- Update Readme
+
+__1.4.3__
+
+- Propagate exit code for the synchronous migration
+- Added `post_extract_release_archive` hook
+- Added support for spaces in project path.
+- Pass branch variable when building release
 
 __1.4.2__
 
